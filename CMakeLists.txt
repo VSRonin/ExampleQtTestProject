@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.9)
+project(ExampleQtTestProject LANGUAGES CXX)
+add_subdirectory(src)
+include(CTest)
+if(BUILD_TESTING)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
